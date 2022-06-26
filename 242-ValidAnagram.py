@@ -15,10 +15,7 @@ class Solution:
         s = sorted(s)
         t = sorted(t)
 
-        for i,j in zip(s,t):
-            if i != j:
-                return False
-        return True
+        return s==t
 
 soln = Solution()
 
