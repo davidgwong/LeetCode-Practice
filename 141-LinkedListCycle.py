@@ -38,7 +38,7 @@ def arrToLinkedList(arr:List[int], pos:int) -> ListNode:
     head = ListNode(arr[0])
     curr = head
 
-    for i in arr[1:]:
+    for i in range(1,len(arr)):
         curr.next = ListNode(arr[i])
         curr = curr.next
     if pos != -1:
